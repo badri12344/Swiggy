@@ -1,0 +1,70 @@
+@media only screen and (max-width: 500px) {
+    .navbar {
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .item a {
+        padding: 0;
+        font-size: 16px;
+    }
+
+    #home {
+        height: 370px;
+    }
+
+    #home::before {
+        height: 75%;
+    }
+
+    #home h1 {
+        font-size: 40px;
+    }
+
+    #home p {
+        padding: 12px 0 0 20px;
+    }
+
+    #services {
+        height: 1584px;
+    }
+
+    .services {
+        margin-bottom: 10px;
+    }
+
+    .service {
+        flex-direction: column;
+    }
+
+    #clients {
+        height: 416px;
+    }
+
+    .clients {
+        flex-wrap: wrap;
+    }
+
+    .client img {
+        height: 148px;
+    }
+
+    #contact::before {
+        background-size: 483px;
+        background-color: #33c0f3;
+    }
+
+    .contact form {
+        width: 85%;
+    }
+
+    .contact input {
+        width: 54%;
+    }
+
+    .contact textarea {
+        width: 54%;
+        height: 150px;
+    }
+}

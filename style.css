@@ -1,0 +1,266 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+.logo img {
+    height: 88px;
+    filter: invert(1);
+}
+
+.logo img:hover {
+    transform: scale(1.2);
+    cursor: pointer;
+}
+
+.navbar {
+    display: flex;
+    position: sticky;
+    opacity: 0.7;
+    top: 0;
+}
+
+.navbar::before {
+    content: "";
+    background-color: black;
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    z-index: -1;
+}
+
+.navbar ul {
+    display: flex;
+    list-style: none;
+    align-items: center;
+}
+
+.item {
+    padding: 12px 20px;
+}
+
+.item a {
+    text-decoration: none;
+    font-size: 20px;
+    font-weight: bold;
+    border-radius: 27px;
+    color: #81439f;
+    padding: 9px;
+}
+
+.item a:hover {
+    background-color: black;
+    color: white;
+    opacity: 0.7;
+}
+
+/* HOME Section */
+
+#home {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 330px;
+}
+
+#home::before {
+    content: "";
+    background: url('./images/bg.jpg') no-repeat center center/cover;
+    position: absolute;
+    height: 65%;
+    width: 100%;
+    z-index: -1;
+    opacity: 0.83;
+}
+
+#home h1 {
+    font-size: 3.8rem;
+    font-family: 'Rubik', sans-serif;
+}
+
+#home p {
+    padding: 12px 0 0 0;
+    font-size: 1.2rem;
+    font-family: 'Josefin Sans', sans-serif;
+}
+
+.btn {
+    margin: 20px;
+    padding: 7px;
+    background-color: antiquewhite;
+    color: brown;
+    border-radius: 12px;
+    font-size: 1.2rem;
+    border: 1px solid orange;
+}
+
+.btn:hover {
+    cursor: pointer;
+    background-color: #125;
+}
+
+/* SERVICES */
+
+.services {
+    font-family: 'Bitter', serif;
+    font-size: 2.7rem;
+    margin: 15px;
+    color: #e48613;
+}
+
+#services {
+    display: flex;
+    flex-direction: column;
+    height: 633px;
+    justify-content: center;
+    align-items: center;
+}
+
+.service {
+    display: flex;
+    flex-direction: row;
+}
+
+.box {
+    border: 2px solid red;
+    padding: 43px 23px;
+    margin: 7px;
+    border-radius: 15px;
+    background-color: antiquewhite;
+}
+
+.box img {
+    display: block;
+    height: 150px;
+    margin: auto;
+}
+
+.box h3 {
+    display: flex;
+    justify-content: center;
+    padding: 8px;
+    font-size: 2rem;
+}
+
+.box p {
+    font-size: 17px;
+    font-family: 'Josefin Sans', sans-serif;
+}
+
+/* CLIENTS */
+
+#clients {
+    height: 340px;
+    /* background-color: cornsilk; */
+}
+
+#clients h1 {
+    font-family: 'Bitter', serif;
+    font-size: 2.7rem;
+    margin: auto;
+    display: flex;
+    color: #e48613;
+    align-items: center;
+    justify-items: center;
+    justify-content: center;
+    padding-bottom: 34px;
+}
+
+.clients {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+
+.client img {
+    height: 250px;
+}
+
+/* CONTACT SECTION */
+
+#contact {
+    /* background-color: aliceblue; */
+    position: relative;
+}
+
+#contact::before {
+    content: "";
+    background: url('./images/contact.png') no-repeat center center/cover;
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    z-index: -1;
+    opacity: 0.8;
+}
+
+#contact h1 {
+    font-family: 'Bitter', serif;
+    font-size: 2.7rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #439f43;
+}
+
+.contact {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 30px;
+}
+
+.contact form {
+    width: 40%;
+}
+
+.contact div {
+    padding: 9px;
+}
+
+.contact textarea {
+    width: 80%;
+    font-family: 'Noto Sans JP', sans-serif;
+    border-radius: 10px;
+    border: 2px solid black;
+    padding: 0.4rem;
+}
+
+.contact input {
+    width: 80%;
+    padding: 0.4rem;
+    font-family: 'Noto Sans JP', sans-serif;
+    border-radius: 10px;
+    border: 2px solid black;
+}
+
+.contact label {
+    font-size: 20px;
+    padding: 10px;
+    font-family: 'Bitter', serif;
+}
+
+.query {
+    float: left;
+}
+
+.contact button {
+    margin: auto;
+}
+
+/* FOOTER SECTION */
+
+footer {
+    background-color: black;
+    color: white;
+    padding: 7px 12px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
